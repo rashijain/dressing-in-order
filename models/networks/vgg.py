@@ -18,7 +18,7 @@ def count_parameters(model):
 class VGG_Model(nn.Module):
     def __init__(self, load_ckpt_path="", listen_list=[]):
         super(VGG_Model, self).__init__()
-        vgg = vgg19(pretrained=True)
+        vgg = vgg19(weights=VGG19_Weights.IMAGENET1K_V1)      
         if load_ckpt_path:
             print("load vgg ckpt from %s" % load_ckpt_path)
             weights = torch.load(load_ckpt_path)
