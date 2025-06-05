@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from torchvision.models import vgg19, vgg16,resnet50
+from torchvision.models import vgg19, vgg16, resnet50, VGG19_Weights
 from collections import OrderedDict
 
 # VGG 19
